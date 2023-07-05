@@ -1,9 +1,9 @@
 name: slack weather action
 
-on: [push]
-# on:
-#   schedule:
-#     - cron: '0 22 * * *'
+# on: [push]
+on:
+  schedule:
+    - cron: '0 22 * * *'
 
 jobs:
   build:
