@@ -10,7 +10,8 @@ weather_info_parser = WeatherInfoParser()
 def send_weather_info():
     weather_info = weather_info_parser.getWeatherInfo(keyword='강남 날씨')
 
-    channel_id = 'C05FY0BCUD6'
+    # slack 채널 ID 를 설정해주세요.
+    channel_id = '채널ID'
 
     rtm.web_client.chat_postMessage(
         channel=channel_id,
