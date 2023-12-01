@@ -11,7 +11,7 @@ class WeatherInfoParser:
 
             page.goto(f'https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query={keyword}')
 
-            weather_info = page.locator('div.content_wrap')
+            weather_info = page.locator('div._tab_flicking')
             weather_info.screenshot(path='info.png')
 
             browser.close()
